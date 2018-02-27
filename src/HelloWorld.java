@@ -3,31 +3,30 @@ public class HelloWorld {
 //        System.out.println("Hello, World!");
         System.out.print("Hello, ");
         System.out.print("World! \n");
-
+//declare a variable
         int myFavoriteNumber;
+//initialize variable
         myFavoriteNumber = 7;
         System.out.println(myFavoriteNumber);
-
-        String myString;
-        myString = "My favorite number is ";
-        System.out.println(myString);
+//Declare and initialize
+        String myString = "My favorite number is ";
+        System.out.println(myString + myFavoriteNumber);
 
         //myString = 'c';
         //myString = 3.1459;
 
-        long myNumber;
+        //long myNumber;
        // myNumber = 3.14;
-        myNumber = 123L;
-        myNumber = 123;
-        //float myNumber = myNumber;
-        //float myNumber = 3.14;
+       // myNumber = 123L;
+       // myNumber = 123;
+        float myNumber = (float)3.14;
         System.out.println(myNumber);
 
 //        int x = 5;
 //        System.out.println(x++);
 //        System.out.println(x);
-/* The code above prints x then prints to new value of x
-* the code below prints the value of x + 1 then the new vale of x.
+/* The code above(pre-increment) prints x then prints to new value of x
+* the code below(post-increment) prints the value of x + 1 then the new vale of x.
  *
  * */
 //        int x = 5;
@@ -54,6 +53,14 @@ public class HelloWorld {
         y -= x;
         System.out.println(x);
         System.out.println(y);
+
+       /* // how java code runs
+       * write java to .java file
+       * compile your java with java compiler
+       * java compiler gives you a .class file, which is bytecode
+       * run(interpret the bytecode) in java virtual machine
+       * jvm calls you main method
+       * */
 
     }
 }
