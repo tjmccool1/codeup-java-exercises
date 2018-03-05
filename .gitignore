@@ -9,4 +9,6 @@
 *.class
 out/*
 
+# My Stuff
 checkingQuiz.java
+src/oopLesson/*
