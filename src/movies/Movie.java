@@ -1,5 +1,10 @@
 package movies;
 
+/**
+ *
+ *
+**/
+
 public class Movie {
 
     private String name, category;

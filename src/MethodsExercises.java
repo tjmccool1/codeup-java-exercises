@@ -25,7 +25,7 @@ public class MethodsExercises {
         System.out.println(remainder);
 
         int minMax = getInterger(1 , 8); // part 2
-        long factor = factorial(1, 10); // part 3
+        long factor = factorial(1, 200); // part 3
         long diceGame = dice(2, 120);   //part 4
 
 

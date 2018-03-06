@@ -8,24 +8,31 @@ import java.util.List;
 
 
 public class MoviesApplication {
-
+    // get user input
     private static Input input = new Input();
-    private static List<Movie> movies = new ArrayList<>(Arrays.asList(MoviesArray.findAll()));
+    //Change array to and arrayList
+//    private static List<Movie> movies = new ArrayList<>(Arrays.asList(MoviesArray.findAll()));
+    public static Movie[] movies = MoviesArray.findAll();
 
-    public static void addMovie() {
 
 
-        String name = input.getString("Enter A Name: ");
 
-        String category = input.getString("Enter A Category:").toLowerCase();
 
-        movies.add(new Movie(name, category));
-        System.out.println("You added Movie Name:" + name + "Category: " + category);
 
-    }
+//    public static void addMovie() {
+//        //get user input
+//        String name = input.getString("Enter A Name: ");
+//        String category = input.getString("Enter A Category:").toLowerCase();
+//        //add movie to the arrayList
+//        movies.add(new Movie(name, category));
+//        System.out.println("You added Movie Name:" + name + "Category: " + category);
+//    }
+
+
 
     public static void main(String[] args) {
-        System.out.println(MoviesArray.findAll().toString());
+
+
 
         do {
             System.out.println("\n");
@@ -43,6 +50,7 @@ public class MoviesApplication {
 
             switch (option) {
                 case 0:
+//                    System.exit(0);
                     System.out.println("Goodbye!");
                     return;
                 case 1:
@@ -70,7 +78,7 @@ public class MoviesApplication {
                             System.out.printf("%s -- %s\n", movie.getName(), movie.getCategory());
                     break;
                 case 6:
-                    addMovie();
+//                    addMovie();
 
                     break;
                 default:
