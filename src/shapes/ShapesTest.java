@@ -6,6 +6,7 @@ public class ShapesTest {
     public static void main(String[] args) {
 //        declare varible
         Measurable myShape;
+
 //        init variable new
         myShape = new Square(5);
 //        sout results
