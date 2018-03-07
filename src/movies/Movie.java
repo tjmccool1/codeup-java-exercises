@@ -8,6 +8,8 @@ package movies;
 public class Movie {
 
     private String name, category;
+    //add rating
+    private String rating;
 
     public String getName() {
         return name;
@@ -31,4 +33,11 @@ public class Movie {
         this.category = category;
     }
 
+    public String getRating() {
+        return rating;
+    }
+
+    public void setRating(String rating) {
+        this.rating = rating;
+    }
 }

@@ -4,7 +4,7 @@ public class Person {
 //part 1
     private String name;
 
-    // returns the person's name
+    // returns the Person's name
 
     public String getName() {
         return name;
@@ -13,7 +13,7 @@ public class Person {
     public void setName(String name) {
         this.name = name;
     }
-    // prints a message to the console using the person's name
+    // prints a message to the console using the Animal's name
     public void sayHello(){
         System.out.println("Hello " + name);
     }
@@ -24,10 +24,10 @@ public class Person {
 
     public static void main(String[] args) {
 //        part 1
-//        Person person = new Person("Joe");
-//        person.setName("Jeff");
-//        System.out.println(person.getName());
-//        person.sayHello();
+//        Person Animal = new Person("Joe");
+//        Animal.setName("Jeff");
+//        System.out.println(Animal.getName());
+//        Animal.sayHello();
 
 //        part 2
 //        Person person1 = new Person("John");

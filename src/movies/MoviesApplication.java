@@ -18,15 +18,24 @@ public class MoviesApplication {
 
 
 
-
-//    public static void addMovie() {
-//        //get user input
-//        String name = input.getString("Enter A Name: ");
-//        String category = input.getString("Enter A Category:").toLowerCase();
-//        //add movie to the arrayList
+    public static void addMovie() {
+        //get user input
+        String name = input.getString("Enter A Name: ");
+        String category = input.getString("Enter A Category:").toLowerCase();
+        //add movie to the arrayList
 //        movies.add(new Movie(name, category));
-//        System.out.println("You added Movie Name:" + name + "Category: " + category);
-//    }
+        System.out.println("You added Movie Name:" + name + "Category: " + category);
+        //Create new object movie
+        Movie newMovie = new Movie(name, category);
+        // Create new Array
+        Movie[] moviesPlus = Arrays.copyOf(movies, movies.length +1);
+        // add new movie to new array
+        int lastIndex = moviesPlus.length -1;
+        moviesPlus[lastIndex] = newMovie;
+        // reassign old array to the new array
+        movies = moviesPlus;
+
+    }
 
 
 
@@ -78,7 +87,7 @@ public class MoviesApplication {
                             System.out.printf("%s -- %s\n", movie.getName(), movie.getCategory());
                     break;
                 case 6:
-//                    addMovie();
+                   addMovie();
 
                     break;
                 default:
