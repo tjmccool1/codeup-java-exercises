@@ -17,7 +17,7 @@ public class Input {
     //prompt????
     public String getString(String prompt) {
         System.out.print(prompt);
-        return this.input.nextLine();
+        return this.input.next();
 //        return getString();
     }
 
